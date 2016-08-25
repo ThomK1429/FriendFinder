@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<!-- necessary scripts for the dialog -->
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder</title>
+		
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	
+	<!-- Modal - start -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>          
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>           
+	<!-- Modal - end -->
+
+</head>
+
+<body>
+
+<br> <p>survey.html </p><br>
+  
+
+<div class="container">
+		<h2>Survey Questions</h2>
+		<hr>
+
+
+		<h3><strong>About You</strong></strong></h3>
+		
+		<div class="container">
+	    <label for="usr"><h4>Name (Required)</h4></label>
+      <input type="text" class="form-control" id="name">
+    
+      <label for="usr"><h4>Link to Photo Image (Required)</h4></label>
+      <input type="text" class="form-control" id="linkPhoto">
+		</div>
+
+		<hr>
+
+
+		<h3><strong> Question 1</strong></h3>
+		<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+		<!-- http://getbootstrap.com/css/#forms-controls - https://harvesthq.github.io/chosen/  - http://stackoverflow.com/questions/22822427/bootstrap-select-dropdown-list-placeholder - <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+		<form>
+
+			<select class="chosen-select" id="q1">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+		 
+
+		<h3><strong> Question 2</strong></h3>
+		<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+			<select class="chosen-select" id="q2">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+
+
+
+		<h3><strong> Question 3</strong></h3>
+		<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+			<select class="chosen-select" id="q3">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+
+		<h3><strong> Question 4</strong></h3>
+		<h4>You rarely do something just out of sheer curiosity.</h4>
+			<select class="chosen-select" id="q4">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+
+		<h3><strong> Question 5</strong></h3>
+		<h4>People can rarely upset you.</h4>
+		<select class="chosen-select" id="q5">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+
+		<h3><strong> Question 6</strong></h3>
+		<h4>It is often difficult for you to relate to other people’s feelings.</h4>
+		<select class="chosen-select" id="q6">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+
+		<h3><strong> Question 7</strong></h3>
+		<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+		<select class="chosen-select" id="q7">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+
+		<h3><strong> Question 8</strong></h3>
+		<h4>You rarely get carried away by fantasies and ideas.</h4>
+		<select class="chosen-select" id="q8">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+		</select>
+
+		<h3><strong> Question 9</strong></h3>
+		<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+		<select class="chosen-select" id="q9">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+		  </select>
+
+		<h3><strong> Question 10</strong></h3>
+		<h4>You feel more energetic after spending time with a group of people.</h4>
+		<select class="chosen-select" id="q10">
+				<option value="">Select an Option. </option>
+			  <option value="1">1 (Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5 (Strongly Agree)</option>
+			</select>
+
+ 
+ </form>
+
+</div>
+
+ <br><br>
+
+<div class="container-fluid">
+
+		<div class="row">
+		  <div class="col-md-1"> </div>
+		  <div class="col-md-10">
+
+<button type="button" class="btn  btn-primary btn-lg btn-block" onclick="myFunction()" >Submit</button>  
+<!-- <button type="button" class="btn  btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contact_dialog" onclick="doFunc();">Submit2</button>  -->
+
+		  </div>
+		  <div class="col-md-1"> </div>
+		</div>
+
+		<div class="row">
+		  <div class="col-md-1"> </div>
+		  <div class="col-md-10">
+		  	<hr>
+		  </div>
+		  <div class="col-md-1"> </div>
+		</div>
+
+		<div class="row">
+		  <div class="col-md-1"> </div>
+		  <div class="col-md-6">
+		  	<a href="/api/friends"> API Friends List</a>
+					| 
+				<a href="https://github.com/ThomK1429/FriendFinder" target="_blank" > GitHub Repo</button></a>
+		  </div>
+		  <div class="col-md-4"> </div>
+		  <br><br>
+		</div>
+
+</div>
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> -- FRIEND FINDER -- </h4>
+        </div>
+        <div class="modal-body">
+          <p id="modalId">Error - enter some data.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+     
+
+
+  
+</body>
+</html>
+
+<script type="text/javascript">
+
+function myFunction() {
+	console.log("onclick took place");
+  //  document.getElementById("demo").innerHTML = "Hello World";
+  console.log($('#name').val().trim());
+
+// Save the question values from the screen
+var friend = {
+			name: $('#name').val().trim(),
+			linkPhoto: $('#linkPhoto').val().trim(),
+			q1: $('#q1').val(),
+			q2: $('#q2').val(),
+			q3: $('#q3').val(),
+			q4: $('#q4').val(),
+			q5: $('#q5').val(),
+			q6: $('#q6').val(),
+			q7: $('#q7').val(),
+			q8: $('#q8').val(),
+			q9: $('#q9').val(),
+			q10: $('#q10').val(),
+		}
+	
+	// scores from the questions answered on the screen	 
+	var qscores = [];
+	qscores.push(friend.q1,friend.q2,friend.q3, friend.q4,friend.q5);
+	qscores.push(friend.q6,friend.q7,friend.q8, friend.q9,friend.q10);
+
+	//test override
+	//qscores.push(5,4,3,2,1);
+	//qscores.push(5,4,3,2,1);
+
+	console.log(JSON.stringify(qscores));
+
+
+		// data is available from the screen
+		console.log("tkfriend=" + JSON.stringify(friend));
+
+		var currentURL = window.location.origin;
+		console.log("currentURL=" + currentURL);
+
+		var friendData = [];
+		// Get the friends on file		
+		$.ajax({url: currentURL + "/api/friends", method:"GET"})
+			.done(function(friendData){
+				
+			  console.log("scores length:" + friendData[0].scores.length);
+
+				console.log(" ");
+				for (var i = friendData.length - 1; i >= 0; i--) {
+					console.log(i + " " + friendData[i].name + " " + JSON.stringify(friendData[i].scores));
+				}
+				console.log(" ");
+
+				//console.log(friendData[0].name);
+				//console.log(friendData[0].photo);
+
+				var sum = 0;
+				var lowscore = 0;
+				var lowId = 0;
+
+
+				for (var j = 0; j < 6; j++) {
+						var sum = 0;
+						for (var i = 0; i < qscores.length; i++) {
+							console.log("dif=" + Math.abs((friendData[j].scores[i] - qscores[i])));
+							sum = sum + Math.abs((friendData[j].scores[i] - qscores[i]));
+				}
+						console.log("sum=" + sum);
+						// initialize lowscore with the first sum
+						if (j == 0) {
+							lowscore = sum;
+							lowId = j;
+						}
+
+						// save the lowest sum in lowscore
+						if ( sum < lowscore) {
+							lowscore = sum;
+							lowId = j;
+						}
+
+						sum = 0;
+
+				}
+
+				// test console msgs for lowscore person
+				console.log(" ");
+				console.log("lowscore=" + lowscore);
+				console.log("lowId=" + lowId);
+				console.log(" ");
+				console.log("Your best friend is:" + friendData[lowId].name);
+				console.log("Photo:" + friendData[lowId].photo);
+				console.log(" ");
+
+				// if nothing entered on the form, set the msg var to an error msg
+				//   else set msg var to the found friend
+				if(friend.name == "") {
+						var msg = "Error: You did not enter anything...try again.";
+				} else {
+						var msg = friend.name + ", your compatibility score is " + lowscore + "." + 
+						"<br>" +  "Therefore, " + friendData[lowId].name + " would be a good friend for you.";
+						msg = msg + '<br><hr><br>' + '<img  src="' + friendData[lowId].photo + '">';
+				}
+
+
+				//msg = '<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"> <br> <br> <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">';
+				
+				// set the msg in the modal, display the modal
+				$('#modalId').html(msg);
+ 				$('#myModal').modal('show');
+ 				friend = "";
+		})
+
+		//var acc = 0;   //accumulator	
+		//for (var i = 0; i < qscores.length; i++) {
+			//console.log(qscores[0]); // - parseInt(friendData[0].scores[i]));
+		  //console.log(friendData[0].scores[0]);
+		//}
+
+ 
+
+
+}
+	 
+ 
+
+
+</script>
