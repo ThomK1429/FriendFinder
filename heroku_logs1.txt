@@ -1,0 +1,256 @@
+Your environment has been set up for using Node.js 4.4.6 (x64) and npm.
+
+C:\Users\Owner>cd desktop
+
+C:\Users\Owner\Desktop>cd bootcamp
+
+C:\Users\Owner\Desktop\Bootcamp>cd friendfinder
+
+C:\Users\Owner\Desktop\Bootcamp\FriendFinder>heroku logs
+ !    Couldn't find that app.
+
+C:\Users\Owner\Desktop\Bootcamp\FriendFinder>node server
+friendData=Ahmed, score 4 = 4, score 10 = 1
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:870:11)
+    at exports._exceptionWithHostPort (util.js:893:20)
+    at Server._listen2 (net.js:1234:14)
+    at listen (net.js:1270:10)
+    at Server.listen (net.js:1366:5)
+    at EventEmitter.listen (C:\Users\Owner\Desktop\Bootcamp\FriendFinder\node_mo
+dules\express\lib\application.js:617:24)
+    at Object.<anonymous> (C:\Users\Owner\Desktop\Bootcamp\FriendFinder\server.j
+s:43:5)
+    at Module._compile (module.js:409:26)
+    at Object.Module._extensions..js (module.js:416:10)
+    at Module.load (module.js:343:32)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+C:\Users\Owner\Desktop\Bootcamp\FriendFinder>cd ..
+
+C:\Users\Owner\Desktop\Bootcamp>cd friendfinder2
+
+C:\Users\Owner\Desktop\Bootcamp\friendfinder2>dir
+ Volume in drive C is TI105955W0C
+ Volume Serial Number is 3403-3BA7
+
+ Directory of C:\Users\Owner\Desktop\Bootcamp\friendfinder2
+
+08/25/2016  02:56 PM    <DIR>          .
+08/25/2016  02:56 PM    <DIR>          ..
+07/25/2016  05:18 PM                12 .gitignore
+08/25/2016  02:55 PM    <DIR>          app
+07/27/2016  01:54 PM             1,227 friends.js
+08/25/2016  02:55 PM    <DIR>          node_modules
+08/23/2016  03:05 PM               652 package.json
+08/24/2016  10:35 PM                19 Procfile.txt
+08/25/2016  02:52 PM                73 README.md
+08/23/2016  03:05 PM             1,885 server.js
+               6 File(s)          3,868 bytes
+               4 Dir(s)  30,645,665,792 bytes free
+
+C:\Users\Owner\Desktop\Bootcamp\friendfinder2>heroku create
+Creating app... done, stormy-escarpment-63714
+https://stormy-escarpment-63714.herokuapp.com/ | https://git.heroku.com/stormy-e
+scarpment-63714.git
+
+C:\Users\Owner\Desktop\Bootcamp\friendfinder2>dir
+ Volume in drive C is TI105955W0C
+ Volume Serial Number is 3403-3BA7
+
+ Directory of C:\Users\Owner\Desktop\Bootcamp\friendfinder2
+
+08/25/2016  03:06 PM    <DIR>          .
+08/25/2016  03:06 PM    <DIR>          ..
+07/25/2016  05:18 PM                12 .gitignore
+08/25/2016  02:55 PM    <DIR>          app
+07/27/2016  01:54 PM             1,227 friends.js
+08/25/2016  02:55 PM    <DIR>          node_modules
+08/23/2016  03:05 PM               652 package.json
+08/24/2016  10:35 PM                19 Procfile
+08/25/2016  02:52 PM                73 README.md
+08/23/2016  03:05 PM             1,885 server.js
+               6 File(s)          3,868 bytes
+               4 Dir(s)  30,645,010,432 bytes free
+
+C:\Users\Owner\Desktop\Bootcamp\friendfinder2>heroku logs
+2016-08-25T19:01:50.286809+00:00 heroku[api]: Release v2 created by sndbytgkv1@v
+erizon.net
+2016-08-25T19:01:50.286722+00:00 heroku[api]: Enable Logplex by sndbytgkv1@veriz
+on.net
+2016-08-25T19:03:17.574664+00:00 heroku[api]: Scale to web=1 by sndbytgkv1@veriz
+on.net
+2016-08-25T19:03:17.575340+00:00 heroku[api]: Deploy 47351a1 by sndbytgkv1@veriz
+on.net
+2016-08-25T19:03:17.575453+00:00 heroku[api]: Release v3 created by sndbytgkv1@v
+erizon.net
+2016-08-25T19:03:18.200800+00:00 heroku[slug-compiler]: Slug compilation started
+
+2016-08-25T19:03:18.200804+00:00 heroku[slug-compiler]: Slug compilation finishe
+d
+2016-08-25T19:03:19.039127+00:00 heroku[web.1]: Starting process with command `n
+pm start`
+2016-08-25T19:03:21.683077+00:00 app[web.1]:
+2016-08-25T19:03:21.687606+00:00 app[web.1]: sh: 1: node.server.js: not found
+2016-08-25T19:03:21.692645+00:00 app[web.1]:
+2016-08-25T19:03:21.683090+00:00 app[web.1]: > node.server.js
+2016-08-25T19:03:21.699585+00:00 app[web.1]: npm ERR! Linux 3.13.0-93-generic
+2016-08-25T19:03:21.699893+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bi
+n/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-25T19:03:21.683090+00:00 app[web.1]: > friendfinder@1.0.0 start /app
+2016-08-25T19:03:21.700097+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-25T19:03:21.700673+00:00 app[web.1]: npm ERR! file sh
+2016-08-25T19:03:21.700814+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-25T19:03:21.700952+00:00 app[web.1]: npm ERR! errno ENOENT
+2016-08-25T19:03:21.701623+00:00 app[web.1]: npm ERR! Failed at the friendfinder
+@1.0.0 start script 'node.server.js'.
+2016-08-25T19:03:21.700441+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-25T19:03:21.701745+00:00 app[web.1]: npm ERR! Make sure you have the lat
+est version of node.js and npm installed.
+2016-08-25T19:03:21.701089+00:00 app[web.1]: npm ERR! syscall spawn
+2016-08-25T19:03:21.701213+00:00 app[web.1]: npm ERR! friendfinder@1.0.0 start:
+`node.server.js`
+2016-08-25T19:03:21.701317+00:00 app[web.1]: npm ERR! spawn ENOENT
+2016-08-25T19:03:21.701493+00:00 app[web.1]: npm ERR!
+2016-08-25T19:03:21.702491+00:00 app[web.1]: npm ERR! Or if that isn't available
+, you can get their info via:
+2016-08-25T19:03:21.683091+00:00 app[web.1]:
+2016-08-25T19:03:21.702090+00:00 app[web.1]: npm ERR! Tell the author that this
+fails on your system:
+2016-08-25T19:03:21.701892+00:00 app[web.1]: npm ERR! If you do, this is most li
+kely a problem with the friendfinder package,
+2016-08-25T19:03:21.702289+00:00 app[web.1]: npm ERR! You can get information on
+ how to open an issue for this project with:
+2016-08-25T19:03:21.702396+00:00 app[web.1]: npm ERR!     npm bugs friendfinder
+2016-08-25T19:03:21.701994+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-25T19:03:21.706067+00:00 app[web.1]:
+2016-08-25T19:03:21.702620+00:00 app[web.1]: npm ERR!     npm owner ls friendfin
+der
+2016-08-25T19:03:21.702193+00:00 app[web.1]: npm ERR!     node.server.js
+2016-08-25T19:03:21.702737+00:00 app[web.1]: npm ERR! There is likely additional
+ logging output above.
+2016-08-25T19:03:21.706231+00:00 app[web.1]: npm ERR! Please include the followi
+ng file with any support request:
+2016-08-25T19:03:21.706338+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-25T19:03:21.784945+00:00 heroku[web.1]: Process exited with status 1
+2016-08-25T19:03:21.800828+00:00 heroku[web.1]: State changed from starting to c
+rashed
+2016-08-25T19:03:21.801940+00:00 heroku[web.1]: State changed from crashed to st
+arting
+2016-08-25T19:03:24.328858+00:00 heroku[web.1]: Starting process with command `n
+pm start`
+2016-08-25T19:03:28.262633+00:00 heroku[web.1]: Process exited with status 1
+2016-08-25T19:03:28.282258+00:00 heroku[web.1]: State changed from starting to c
+rashed
+2016-08-25T19:03:28.092907+00:00 app[web.1]: > friendfinder@1.0.0 start /app
+2016-08-25T19:03:28.092889+00:00 app[web.1]:
+2016-08-25T19:03:28.092908+00:00 app[web.1]: > node.server.js
+2016-08-25T19:03:28.092909+00:00 app[web.1]:
+2016-08-25T19:03:28.142067+00:00 app[web.1]: npm ERR! file sh
+2016-08-25T19:03:28.141335+00:00 app[web.1]: npm ERR! node v5.11.1
+2016-08-25T19:03:28.142618+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2016-08-25T19:03:28.126047+00:00 app[web.1]:
+2016-08-25T19:03:28.141928+00:00 app[web.1]: npm ERR! npm  v3.8.6
+2016-08-25T19:03:28.143272+00:00 app[web.1]: npm ERR! friendfinder@1.0.0 start:
+`node.server.js`
+2016-08-25T19:03:28.142689+00:00 app[web.1]: npm ERR! syscall spawn
+2016-08-25T19:03:28.143877+00:00 app[web.1]: npm ERR! If you do, this is most li
+kely a problem with the friendfinder package,
+2016-08-25T19:03:28.143907+00:00 app[web.1]: npm ERR! not with npm itself.
+2016-08-25T19:03:28.113908+00:00 app[web.1]: sh: 1: node.server.js: not found
+2016-08-25T19:03:28.143274+00:00 app[web.1]: npm ERR! spawn ENOENT
+2016-08-25T19:03:28.142619+00:00 app[web.1]: npm ERR! errno ENOENT
+2016-08-25T19:03:28.143389+00:00 app[web.1]: npm ERR! Failed at the friendfinder
+@1.0.0 start script 'node.server.js'.
+2016-08-25T19:03:28.140220+00:00 app[web.1]: npm ERR! Linux 3.13.0-85-generic
+2016-08-25T19:03:28.143274+00:00 app[web.1]: npm ERR!
+2016-08-25T19:03:28.140699+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bi
+n/node" "/app/.heroku/node/bin/npm" "start"
+2016-08-25T19:03:28.144095+00:00 app[web.1]: npm ERR! Tell the author that this
+fails on your system:
+2016-08-25T19:03:28.144283+00:00 app[web.1]: npm ERR!     node.server.js
+2016-08-25T19:03:28.144865+00:00 app[web.1]: npm ERR! Or if that isn't available
+, you can get their info via:
+2016-08-25T19:03:28.143875+00:00 app[web.1]: npm ERR! Make sure you have the lat
+est version of node.js and npm installed.
+2016-08-25T19:03:28.144864+00:00 app[web.1]: npm ERR!     npm bugs friendfinder
+2016-08-25T19:03:28.144951+00:00 app[web.1]: npm ERR!     npm owner ls friendfin
+der
+2016-08-25T19:03:28.151640+00:00 app[web.1]:
+2016-08-25T19:03:28.144863+00:00 app[web.1]: npm ERR! You can get information on
+ how to open an issue for this project with:
+2016-08-25T19:03:28.152110+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2016-08-25T19:03:28.145151+00:00 app[web.1]: npm ERR! There is likely additional
+ logging output above.
+2016-08-25T19:03:28.151922+00:00 app[web.1]: npm ERR! Please include the followi
+ng file with any support request:
+2016-08-25T19:06:15.998369+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/" host=stormy-escarpment-63714.herokuapp.com request_id=
+62be9592-e367-4a85-94a9-be393bd2af0a fwd="71.187.103.66" dyno= connect= service=
+ status=503 bytes=
+2016-08-25T19:06:23.311613+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/favicon.ico" host=stormy-escarpment-63714.herokuapp.com
+request_id=621cbea7-f670-4f54-bde9-ccffffed6279 fwd="71.187.103.66" dyno= connec
+t= service= status=503 bytes=
+2016-08-25T19:06:29.421777+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/favicon.ico" host=stormy-escarpment-63714.herokuapp.com
+request_id=52468ca4-6300-44e3-b343-d29847c80682 fwd="71.187.103.66" dyno= connec
+t= service= status=503 bytes=
+2016-08-25T19:06:29.055999+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/" host=stormy-escarpment-63714.herokuapp.com request_id=
+442baad8-ac16-4cd9-a6b5-201e3927b985 fwd="71.187.103.66" dyno= connect= service=
+ status=503 bytes=
+2016-08-25T19:06:31.031830+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/favicon.ico" host=stormy-escarpment-63714.herokuapp.com
+request_id=a439f4b8-f79e-40ba-8eda-2f78402a92c0 fwd="71.187.103.66" dyno= connec
+t= service= status=503 bytes=
+2016-08-25T19:06:30.828375+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/" host=stormy-escarpment-63714.herokuapp.com request_id=
+b5d6a00d-48b0-4701-90df-8a2270daa011 fwd="71.187.103.66" dyno= connect= service=
+ status=503 bytes=
+2016-08-25T19:09:45.769602+00:00 heroku[slug-compiler]: Slug compilation started
+
+2016-08-25T19:09:45.769611+00:00 heroku[slug-compiler]: Slug compilation finishe
+d
+2016-08-25T19:09:45.550979+00:00 heroku[api]: Deploy dd80019 by sndbytgkv1@veriz
+on.net
+2016-08-25T19:09:45.551069+00:00 heroku[api]: Release v4 created by sndbytgkv1@v
+erizon.net
+2016-08-25T19:09:45.816823+00:00 heroku[web.1]: State changed from crashed to st
+arting
+2016-08-25T19:09:48.187094+00:00 heroku[web.1]: Starting process with command `n
+ode server.js`
+2016-08-25T19:09:52.235632+00:00 app[web.1]: friendData=Ahmed, score 4 = 4, scor
+e 10 = 1
+2016-08-25T19:09:52.250822+00:00 app[web.1]: Fserver App listening on PORT: 3246
+8
+2016-08-25T19:09:52.868807+00:00 heroku[web.1]: State changed from starting to u
+p
+2016-08-25T19:09:54.719068+00:00 app[web.1]: Error: ENOENT: no such file or dire
+ctory, stat '/app/app/routing../public/home.html'
+2016-08-25T19:09:54.507684+00:00 app[web.1]: Error: ENOENT: no such file or dire
+ctory, stat '/app/app/routing../public/home.html'
+2016-08-25T19:09:54.507694+00:00 app[web.1]:     at Error (native)
+2016-08-25T19:09:54.719071+00:00 app[web.1]:     at Error (native)
+2016-08-25T19:09:54.508110+00:00 heroku[router]: at=info method=GET path="/" hos
+t=stormy-escarpment-63714.herokuapp.com request_id=9ec359ed-e75f-47a5-b5c7-0eb90
+0cda61d fwd="71.187.103.66" dyno=web.1 connect=0ms service=41ms status=404 bytes
+=208
+2016-08-25T19:09:54.721442+00:00 heroku[router]: at=info method=GET path="/favic
+on.ico" host=stormy-escarpment-63714.herokuapp.com request_id=8cca980f-a6b5-42f9
+-82a2-dbb4b2a809e4 fwd="71.187.103.66" dyno=web.1 connect=0ms service=6ms status
+=404 bytes=208
+2016-08-25T19:09:57.259497+00:00 app[web.1]:     at Error (native)
+2016-08-25T19:09:57.259480+00:00 app[web.1]: Error: ENOENT: no such file or dire
+ctory, stat '/app/app/routing../public/home.html'
+2016-08-25T19:09:57.261893+00:00 heroku[router]: at=info method=GET path="/" hos
+t=stormy-escarpment-63714.herokuapp.com request_id=5a548794-181f-49da-adf5-fe19a
+125dbab fwd="71.187.103.66" dyno=web.1 connect=0ms service=2ms status=404 bytes=
+208
+
+C:\Users\Owner\Desktop\Bootcamp\friendfinder2>
