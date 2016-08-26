@@ -294,8 +294,8 @@ var friend = {
 				var lowscore = 0;
 				var lowId = 0;
 
-
-				for (var j = 0; j < 6; j++) {
+				//console.log("friendData.length=" + friendData.length);
+				for (var j = 0; j < friendData.length; j++) {
 						var sum = 0;
 						for (var i = 0; i < qscores.length; i++) {
 							console.log("dif=" + Math.abs((friendData[j].scores[i] - qscores[i])));
@@ -334,25 +334,25 @@ var friend = {
 				} else {
 						var msg = friend.name + ", your compatibility score is " + lowscore + "." + 
 						"<br>" +  "Therefore, " + friendData[lowId].name + " would be a good friend for you.";
-						msg = msg + '<br><hr><br>' + '<img  src="' + friendData[lowId].photo + '">';
+						msg = msg + '<br><hr><br>' + '<img  src="' + friendData[lowId].photo + '"' + ' alt="' + friendData[lowId].name + '">';
+						//sg + '<br><hr><br>' + '<img  src="' + friendData[lowId].photo + '">';
+						console.log("msg=" + msg);
 				}
 
 
 				//msg = '<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"> <br> <br> <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">';
 				
 				// set the msg in the modal, display the modal
-				$('#modalId').html(msg);
- 				$('#myModal').modal('show');
- 				friend = "";
+				$( document ).ready(function() {
+    			console.log( "ready!" );
+					$('#modalId').html(msg);
+ 					$('#myModal').modal('show');
+ 					friend = "";
+				});
+
 		})
 
-		//var acc = 0;   //accumulator	
-		//for (var i = 0; i < qscores.length; i++) {
-			//console.log(qscores[0]); // - parseInt(friendData[0].scores[i]));
-		  //console.log(friendData[0].scores[0]);
-		//}
-
- 
+		
 
 
 }
